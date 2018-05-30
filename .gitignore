@@ -27,3 +27,5 @@ wp-config.php
 /wp-content/themes/illdy/cache/
 /wp-content/plugins/widgetkit/cache/
 /wp-content/themes/illdy/config.json
+/wp-content/themes/illdy/package-lock.json
+/wp-content/themes/illdy/inc/libraries/epsilon-framework/package-lock.json
