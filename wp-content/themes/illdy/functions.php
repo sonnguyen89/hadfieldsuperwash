@@ -344,7 +344,7 @@ if ( ! function_exists( 'illdy_widgets' ) ) {
 				'name'          => __( 'Front page - Services Sidebar', 'illdy' ),
 				'id'            => 'front-page-services-sidebar',
 				'description'   => __( 'The widgets added in this sidebar will appear in services section from front page.', 'illdy' ),
-				'before_widget' => '<div id="%1$s" class="col-sm-4 %2$s">',
+				'before_widget' => '<div id="%1$s" class="col-sm-3 %2$s">',
 				'after_widget'  => '</div>',
 				'before_title'  => '',
 				'after_title'   => '',

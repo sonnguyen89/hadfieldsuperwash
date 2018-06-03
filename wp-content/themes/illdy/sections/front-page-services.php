@@ -46,7 +46,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 					dynamic_sidebar( 'front-page-services-sidebar' );
 				elseif ( current_user_can( 'edit_theme_options' ) & defined( 'ILLDY_COMPANION' ) ) :
 					$the_widget_args = array(
-						'before_widget' => '<div class="col-sm-4 widget_illdy_service">',
+						'before_widget' => '<div class="col-sm-3 widget_illdy_service">',
 						'after_widget'  => '</div>',
 						'before_title'  => '',
 						'after_title'   => '',

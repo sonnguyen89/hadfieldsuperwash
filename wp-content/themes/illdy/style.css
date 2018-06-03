@@ -13,3 +13,6 @@ Text Domain: illdy
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+#services .widget_illdy_service:nth-child(4) {
+    margin-top: 0px;
+}
