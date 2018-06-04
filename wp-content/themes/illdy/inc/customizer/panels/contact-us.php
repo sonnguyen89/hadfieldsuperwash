@@ -187,7 +187,27 @@ $wp_customize->selective_refresh->add_partial(
 		'selector' => '#contact-us .section-content .row .col-sm-5 .box-left',
 	)
 );
-
+//Contact Store Opening Hours
+$wp_customize->add_setting(
+    $prefix . '_contact_us_general_store_opening_hours', array(
+        'sanitize_callback' => 'wp_kses_post',
+        'default'           => __( 'Store Opening Hours', 'illdy' ),
+        'transport'         => 'postMessage',
+    )
+);
+$wp_customize->add_control(
+    $prefix . '_contact_us_general_store_opening_hours', array(
+        'label'    => __( 'Store Opening Hours', 'illdy' ),
+        'section'  => $prefix . '_contact_us',
+        'priority' => 6,
+        'type'     => 'epsilon-text-editor',
+    )
+);
+$wp_customize->selective_refresh->add_partial(
+    $prefix . '_contact_us_general_store_opening_hours', array(
+        'selector' => '#contact-us .section-content .row .col-sm-4 .contact-us-store-hours',
+    )
+);
 // Contact Form 7
 $wp_customize->add_setting(
 	'illdy_contact_us_general_contact_form_7', array(
@@ -199,7 +219,7 @@ $wp_customize->add_control(
 		$wp_customize, 'illdy_contact_us_general_contact_form_7', array(
 			'label'    => __( 'Select the contact form you\'d like to display (powered by Contact Form 7)', 'illdy' ),
 			'section'  => $prefix . '_contact_us',
-			'priority' => 6,
+			'priority' => 7,
 			'type'     => 'illdy_contact_form_7',
 		)
 	)
@@ -220,7 +240,7 @@ $wp_customize->add_control(
 			'description'     => sprintf( '%s %s %s', __( 'Install', 'illdy' ), '<a href="https://wordpress.org/plugins/contact-form-7/" title="Contact Form 7" target="_blank">Contact Form 7</a>', __( 'and select a contact form to work this setting.', 'illdy' ) ),
 			'section'         => $prefix . '_contact_us',
 			'settings'        => $prefix . '_contact_us_install_contact_form_7',
-			'priority'        => 7,
+			'priority'        => 8,
 			'active_callback' => 'illdy_is_not_active_contact_form_7',
 		)
 	)

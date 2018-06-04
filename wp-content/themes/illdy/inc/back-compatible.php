@@ -170,6 +170,13 @@ if ( version_compare( $theme->version, '1.0.36', '>=' ) ) {
 		set_theme_mod( 'illdy_contact_us_general_customer_support_title', $support_title );
 		remove_theme_mod( 'illdy_contact_us_customer_support_title' );
 	}
+    //Store Opening Hours
+    $stores_opening_hours = get_theme_mod( 'illdy_contact_us_store_opening_hours' );
+    if ( $stores_opening_hours ) {
+        set_theme_mod( 'illdy_contact_us_general_store_opening_hours', $stores_opening_hours );
+        remove_theme_mod( 'illdy_contact_us_store_opening_hours' );
+    }
+
 }// End if().
 
 if ( is_admin() ) {

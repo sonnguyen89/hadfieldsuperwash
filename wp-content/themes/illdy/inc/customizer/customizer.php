@@ -335,6 +335,7 @@ if ( ! function_exists( 'illdy_create_contact_tab_sections' ) ) {
 			$prefix . '_contact_us_entry',
 			$prefix . '_contact_us_general_address_title',
 			$prefix . '_contact_us_general_customer_support_title',
+            $prefix . '_contact_us_general_store_opening_hours'
 		);
 
 		if ( illdy_is_not_active_contact_form_7() ) {
@@ -433,6 +434,11 @@ if ( ! function_exists( 'illdy_contact_us_general_customer_support_title' ) ) {
 	function illdy_contact_us_general_customer_support_title() {
 		return get_theme_mode( 'illdy_contact_us_general_customer_support_title' );
 	}
+}
+if ( ! function_exists( 'illdy_contact_us_general_store_opening_hours' ) ) {
+    function illdy_contact_us_store_opening_hours() {
+        return get_theme_mode( 'illdy_contact_us_general_store_opening_hours' );
+    }
 }
 
 if ( ! function_exists( 'illdy_address2' ) ) {

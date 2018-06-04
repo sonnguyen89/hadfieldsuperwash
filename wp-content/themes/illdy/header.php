@@ -46,7 +46,7 @@ $url = get_theme_mod( 'header_image', get_theme_support( 'custom-header', 'defau
 if ( $is_mobile_safari ) {
 	$style .= 'background-attachment: scroll;';
 } elseif ( $jumbotron_parallax_enable ) {
-	$style .= 'background-attachment: fixed;';
+	$style .= 'background-attachment: scroll;';
 }
 
 if ( ( is_single() || is_page() || is_archive() ) && get_theme_mod( 'illdy_archive_page_background_stretch' ) == 2 ) {

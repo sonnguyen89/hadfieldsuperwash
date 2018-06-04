@@ -26,6 +26,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 	$general_contact_form_7    = get_theme_mod( 'illdy_contact_us_general_contact_form_7' );
 	$general_address_title     = get_theme_mod( 'illdy_contact_us_general_address_title', __( 'Address', 'illdy' ) );
 	$customer_support_title    = get_theme_mod( 'illdy_contact_us_general_customer_support_title', __( 'Customer Support', 'illdy' ) );
+    $stores_opening_hours      = get_theme_mod( 'illdy_contact_us_general_store_opening_hours', __( 'Store Opening Hours', 'illdy' ) );
 } else {
 	$contact_bar_facebook_url  = get_theme_mod( 'illdy_contact_bar_facebook_url' );
 	$contact_bar_twitter_url   = get_theme_mod( 'illdy_contact_bar_twitter_url' );
@@ -44,6 +45,7 @@ if ( current_user_can( 'edit_theme_options' ) ) {
 	$general_contact_form_7    = get_theme_mod( 'illdy_contact_us_general_contact_form_7' );
 	$general_address_title     = get_theme_mod( 'illdy_contact_us_general_address_title' );
 	$customer_support_title    = get_theme_mod( 'illdy_contact_us_general_customer_support_title' );
+    $stores_opening_hours      = get_theme_mod( 'illdy_contact_us_general_store_opening_hours');
 }// End if().
 
 if ( '' != $general_title || '' != $general_entry || '' != $general_address_title || '' != $address1 || '' != $address2 || '' != $customer_support_title || '' != $email || '' != $phone || '' != $contact_bar_twitter_url || '' != $contact_bar_facebook_url || '' != $contact_bar_linkedin_url || '' != $contact_bar_googlep_url || '' != $contact_bar_instagram_url || '' != $contact_bar_vimeo_url || '' != $contact_bar_pinterest_url || '' != $contact_bar_youtube_url || null != $general_contact_form_7 && 'default' != $general_contact_form_7 ) {
@@ -90,7 +92,7 @@ if ( '' != $general_title || '' != $general_entry || '' != $general_address_titl
 									</div><!--/.box-right-->
 								</div><!--/.contact-us-box-->
 							</div><!--/.col-sm-4-->
-							<div class="col-sm-5">
+							<div class="col-sm-4">
 								<div class="contact-us-box">
 									<?php if ( $customer_support_title ) : ?>
 										<div class="box-left" data-customizer="box-left-customer-support-title">
@@ -108,7 +110,7 @@ if ( '' != $general_title || '' != $general_entry || '' != $general_address_titl
 									</div><!--/.box-right-->
 								</div><!--/.contact-us-box-->
 							</div><!--/.col-sm-5-->
-							<div class="col-sm-3">
+							<div class="col-sm-4">
 								<?php if ( $contact_bar_twitter_url || $contact_bar_facebook_url || $contact_bar_linkedin_url || $contact_bar_googlep_url || $contact_bar_pinterest_url || $contact_bar_instagram_url || $contact_bar_youtube_url || $contact_bar_vimeo_url ) { ?>
 									<div class="contact-us-social">
 										<?php if ( $contact_bar_twitter_url ) : ?>
@@ -136,11 +138,20 @@ if ( '' != $general_title || '' != $general_entry || '' != $general_address_titl
 											<a href="<?php echo esc_url( $contact_bar_vimeo_url ); ?>" title="<?php _e( 'Vimeo', 'illdy' ); ?>" target="_blank"><i class="fa fa-vimeo"></i></a>
 										<?php endif; ?>
 									</div><!--/.contact-us-social-->
-								<?php } ?>
+								<?php } elseif($stores_opening_hours){ ?>
+                                    <div class="contact-us-store-hours">
+                                       <?php echo $stores_opening_hours ?>
+                                    </div>
+                                <?php } ?>
 							</div><!--/.col-sm-3-->
 						</div><!--/.row-->
 					</div><!--/.col-sm-12-->
 				</div><!--/.row-->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <?php echo do_shortcode("[wpgmza id=\"1\"]"); ?>
+                    </div>
+                </div>
 				<div class="row">
 					<div class="col-sm-12">
 						<?php if ( class_exists( 'WPCF7' ) && null != $general_contact_form_7 && 'default' != $general_contact_form_7 && get_post( $general_contact_form_7 ) ) : ?>
