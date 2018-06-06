@@ -25,3 +25,40 @@ Use it to make something cool, have fun, and share what you've learned with othe
 {
     color:#27c1e5;
 }
+#contact-us {
+    width: 100%;
+    background-color: #FFF;
+    padding: 40px 0 20px 0;
+    text-align: center;
+}
+#contact-us .section-content .contact-us-box .box-right
+{
+    display:block;
+}
+#contact-us .section-content .contact-us-box  .box-right .box-right-row{
+    text-align: center;
+
+}
+#contact-us .section-header {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#contact-us .section-content .contact-us-store-hours
+{
+    text-align: right;
+    margin-right: 30px;
+}
+
+
+#services {
+    width: 100%;
+    padding: 65px 0 30px 0;
+    text-align: center;
+}
+
+
+.front-page-section .section-header h3, #latest-news .section-content .post .post-button:active, #blog .blog-post .blog-post-title, .widget table thead th, #team .section-content .person .person-content h6, .widget_rss cite, .illdy_home_parallax h3 {
+    color: #28c2e5;
+    border-top: #1e73be 1px solid;
+    padding-top: 30px;
+}
