@@ -45,10 +45,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 #contact-us .section-content .contact-us-store-hours
 {
-    text-align: right;
-    margin-right: 30px;
+    text-align: center;
+    margin-right:0;
 }
-
+@media all and (max-width:767px)
+{
+    #contact-us .section-content .contact-us-store-hours
+    {
+        text-align: center;
+    }
+}
 
 #services {
     width: 100%;
