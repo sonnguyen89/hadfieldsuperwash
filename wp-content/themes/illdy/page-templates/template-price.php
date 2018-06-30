@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="page-header">
-                <h1>Price List</h1>
+                <h3>Standard Price List</h3>
             </div>
             <table class="table">
                 <thead>
@@ -53,17 +53,14 @@
 
 
 
-            <section id="blog">
-                <?php
-                if ( have_posts() ) :
-                    while ( have_posts() ) :
-                        the_post();
-                        get_template_part( 'template-parts/content', 'page' );
-                    endwhile;
-                endif;
-                ?>
-            </section><!--/#blog-->
         </div><!--/.col-sm-12-->
     </div><!--/.row-->
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="doona-wash-section" style="text-align: center ;margin: 45px 0;">
+              <img src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/superwash_doona_wash.jpg' ) ?>"/>
+            </div>
+        </div>
+    </div>
 </div><!--/.container-->
 <?php get_footer(); ?>
