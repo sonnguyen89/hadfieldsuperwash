@@ -28,21 +28,21 @@
 
                 <tbody>
                 <tr class="info">
-                    <th scope="row">5 kg</th>
+                    <th scope="row">10 kg</th>
                     <td>$5</td>
                     <td>$2</td>
                     <td>$4</td>
                     <td>$15</td>
                 </tr>
                 <tr>
-                    <th scope="row">7 kg</th>
+                    <th scope="row">12 kg</th>
                     <td>$7</td>
                     <td>$2</td>
                     <td>$4</td>
                     <td>$17</td>
                 </tr>
                 <tr class="active">
-                    <th scope="row">10 kg</th>
+                    <th scope="row">14 kg</th>
                     <td>$9</td>
                     <td>$2</td>
                     <td>$5</td>
@@ -50,9 +50,9 @@
                 </tr>
                 </tbody>
             </table>
-
-
-
+            <p>
+               Note:  Free Labour service. If you supply your own laundry  detergent, we will give you discounted price
+            </p>
         </div><!--/.col-sm-12-->
     </div><!--/.row-->
     <div class="row">
