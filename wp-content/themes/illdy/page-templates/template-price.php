@@ -13,7 +13,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="page-header">
-                <h3>Standard Price List</h3>
+                <h3>Price List</h3>
             </div>
             <table class="table">
                 <thead>
