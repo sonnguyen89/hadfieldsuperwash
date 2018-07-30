@@ -97,7 +97,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="doona-wash-section" style="text-align: center ;margin: 45px 0;">
-              <img src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/superwash_doona_wash.jpg' ) ?>"/>
+              <img style="width: 100%;" src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/superwash_doona_wash.jpg' ) ?>"/>
             </div>
         </div>
     </div>
