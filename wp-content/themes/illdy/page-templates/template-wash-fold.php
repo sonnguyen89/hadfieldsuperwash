@@ -30,7 +30,7 @@
         </div>
         <div class="col-sm-5">
             <div style="text-align: right ;margin: 45px 0;">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/wash-fold.jpg' ) ?>" style="width:380px"/>
+                <img src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/wash-fold.jpg' ) ?>" style="width: 100%;"/>
             </div>
         </div>
     </div>

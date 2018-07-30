@@ -175,3 +175,12 @@
 	}
 
 }
+
+
+@media only screen and (max-width: 992px)
+{
+	.header-front-page nav ul.sub-menu {
+		background-color: #27c2e4 !important;
+	}
+}
+
