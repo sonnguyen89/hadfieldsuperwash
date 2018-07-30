@@ -165,3 +165,14 @@
 		padding: 0;
 	}
 }
+
+
+@media screen and (max-width: 500px)
+{
+	body #header .bottom-header h1 {
+		line-height: 44px;
+		font-size: 40px;
+		word-wrap: normal;
+	}
+	
+}
