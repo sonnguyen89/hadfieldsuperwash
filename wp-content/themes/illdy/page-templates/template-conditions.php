@@ -20,7 +20,7 @@
     <div class="row">
         <div class="col-sm-12">
             <div class="dry-clean-terms-section" style="text-align: center ;margin: 45px 0;">
-                <img src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/drycleaner-terms.jpg' ) ?>"/>
+                <img style="width:100%" src="<?php echo esc_url( get_template_directory_uri() . '/layout/images/drycleaner-terms.jpg' ) ?>"/>
             </div>
         </div>
     </div>
