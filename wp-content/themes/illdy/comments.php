@@ -102,15 +102,15 @@ if ( post_password_required() ) {
 	}
 
 	if ( '' != $commenter['comment_author_url'] ) {
-		$url = esc_attr( $commenter['comment_author_url'] );
+		$phone = esc_attr( $commenter['comment_author_phone'] );
 	} else {
-		$url = '';
+        $phone = '';
 	}
 
 	$fields = array(
 		'author' => '<div class="row"><div class="col-sm-4"><input class="input-full" placeholder="' . __( 'Name', 'illdy' ) . '" name="author" type="text" value="' . esc_attr( $name ) . '" ' . $aria_req . ' /></div>',
-		'email'  => '<div class="col-sm-4"><input class="input-full" placeholder="' . __( 'Email', 'illdy' ) . '" name="email" type="email" value="' . esc_attr( $email ) . '" ' . $aria_req . ' /></div>',
-		'url'    => '<div class="col-sm-4"><input class="input-full" placeholder="' . __( 'Website', 'illdy' ) . '" name="url" type="url" value="' . esc_url( $url ) . '" /></div>',
+		//'email'  => '<div class="col-sm-4"><input class="input-full" placeholder="' . __( 'Email', 'illdy' ) . '" name="email" type="email" value="' . esc_attr( $email ) . '" ' . $aria_req . ' /></div>',
+		'phone'    => '<div class="col-sm-4"><input class="input-full" placeholder="' . __( 'phone', 'illdy' ) . '" name="phone" type="text" value="' . esc_url( $phone ) . '" /></div>',
 	);
 
 	if ( is_user_logged_in() ) {

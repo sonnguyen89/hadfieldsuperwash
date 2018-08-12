@@ -28,5 +28,14 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <?php
+            if ( comments_open() || get_comments_number() ) :
+                comments_template();
+            endif;
+            ?>
+        </div>
+    </div>
 </div><!--/.container-->
 <?php get_footer(); ?>
