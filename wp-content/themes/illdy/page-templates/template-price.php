@@ -72,7 +72,7 @@
             <ul class="list-group">
                 <li class="list-group-item list-group-item-action list-group-item-info">Doona Wash  $25</li>
                 <li class="list-group-item">** 4 Garment $20</li>
-                <li class="list-group-item list-group-item-action list-group-item-info">Shirt Press only $3.00 each</li>
+                <li class="list-group-item list-group-item-action list-group-item-info">Shirt Press only $4.00 each</li>
             </ul>
             <p>
                 **exclusion applies.
@@ -89,8 +89,9 @@
     <div class="row">
         <div class="col-sm-12">
             <ul class="list-group">
-                <li class="list-group-item list-group-item-action list-group-item-info">20 Litter for $50</li>
+                <li class="list-group-item list-group-item-action list-group-item-info">20 Litter for $45</li>
                 <li class="list-group-item">Fill up $3.00 per litter</li>
+                <li class="list-group-item">School uniform no more 10% off</li>
             </ul>
         </div>
     </div>
